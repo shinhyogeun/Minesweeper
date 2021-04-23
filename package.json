@@ -7,9 +7,9 @@
     "start": "webpack serve",
     "lint": "eslint --ext js,jsx .",
     "build": "webpack build --mode=production",
-    "test": "jest --watchAll",
-    "coverage": "jest --coverage",
-    "deploy": "gh-pages -d build"
+    "test": "jest --coverage",
+    "deploy": "gh-pages -d build",
+    "coverage": "npm run test:unit -- --coverage"
   },
   "repository": {
     "type": "git",
